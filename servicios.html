@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — PixelNova</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+<header>
+  <nav class="nav">
+    <div class="nav-logo">Pixel<span>Nova</span></div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <section class="intro-servicios">
+    <h1>Nuestros servicios</h1>
+    <p>Estos son los tres servicios principales que ofrecemos en PixelNova. Todos están pensados para que tu presencia digital se vea bien sin importar desde qué dispositivo te visiten.</p>
+  </section>
+
+  <section class="lista-servicios">
+    <h2 class="sr-only">Lista de servicios</h2>
+    <article class="servicio">
+      <h2>Diseño web responsivo</h2>
+      <p>Construimos sitios que se ajustan solos al tamaño de la pantalla: celular, tableta o computadora. Usamos HTML y CSS escritos a mano, sin plantillas genéricas, para que cada sitio sea único.</p>
+    </article>
+    <article class="servicio">
+      <h2>Diseño gráfico</h2>
+      <p>Creamos logotipos, íconos y banners que combinan con la identidad de tu marca, listos para usarse tanto en tu sitio web como en redes sociales.</p>
+    </article>
+    <article class="servicio">
+      <h2>Marketing digital</h2>
+      <p>Te ayudamos a planear publicaciones y campañas sencillas para que más personas lleguen a tu sitio web.</p>
+    </article>
+  </section>
+
+  <section class="portafolio">
+    <h2>Un vistazo a nuestro trabajo</h2>
+    <p>Pasa las imágenes con las flechas para ver parte de nuestro proceso de diseño.</p>
+
+    <div class="carrusel" id="carrusel">
+      <button type="button" class="carrusel-btn" id="btnAnterior" aria-label="Imagen anterior">&#10094;</button>
+
+      <div class="carrusel-ventana">
+        <figure class="carrusel-slide activo">
+          <img src="images/servicios-lineas-codigo.jpg" alt="Primer plano de líneas de código en una pantalla, parte del proceso de desarrollo web">
+          <figcaption>Escribiendo el código del sitio</figcaption>
+        </figure>
+        <figure class="carrusel-slide">
+          <img src="images/servicios-escritorio-vista-superior.jpg" alt="Vista superior de un escritorio de trabajo con laptop, libreta y taza de café">
+          <figcaption>Planeando el diseño en el escritorio</figcaption>
+        </figure>
+        <figure class="carrusel-slide">
+          <img src="images/servicios-tableta-diseno.jpg" alt="Tableta digitalizadora usada para ilustrar y diseñar gráficos">
+          <figcaption>Diseñando gráficos a mano en tableta digital</figcaption>
+        </figure>
+        <figure class="carrusel-slide">
+          <img src="images/servicios-mesa-oficina.jpg" alt="Mesa de oficina con varias computadoras conectadas, equipo de trabajo">
+          <figcaption>Nuestro espacio de trabajo en equipo</figcaption>
+        </figure>
+      </div>
+
+      <button type="button" class="carrusel-btn" id="btnSiguiente" aria-label="Imagen siguiente">&#10095;</button>
+    </div>
+    <p class="carrusel-estado" id="carruselEstado" aria-live="polite">Imagen 1 de 4</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <nav class="footer-nav" aria-label="Enlaces del pie de página">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <p>&copy; <span id="anio"></span> PixelNova. Proyecto final Diseño Web para todos.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
